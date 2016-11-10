@@ -1,0 +1,26 @@
+<div class="menu-back"></div>
+<div class="info-container">
+<div class="contact-container-inner">
+<h1>Adrress</h1>
+Dental Spa - Hotel Bończa</br>
+POLAND-SZCZECIN</br>
+ul.A. Krzywoń 18</br>
+70-820 Szczecin
+<h1>Contact</h1>
+<i class="fa fa-phone-square" aria-hidden="true"> 91 85 11 456</i></br>
+<i class="fa fa-envelope" aria-hidden="true"> kontakt@dentalspa.szczecin.pl</i></br>
+</div>
+
+<div class="contact-container-inner">
+<h1>Send E-mail</h1>
+	<form name="sendMessage" method="POST">
+		Your E-mail:</br>
+		<input type="email" name="email" ng-model="customer.Email" placeholder="type Your E-mail here" required></br>
+		Leave message:</br>
+		<textarea rows="10" type="text" name="msg" ng-model="customer.Msg" placeholder="type Your message here"></textarea></br>
+		<input class="sendbtn" type="submit" value="Send"
+  ng-disabled="sendMessage.email.$invalid || sendMessage.msg.$invalid  || sendMessage.msg.$pristine || !customer.Msg.length" ng-click="sendEmail()">
+	</form>
+	
+</div>
+</div>

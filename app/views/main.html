@@ -1,0 +1,22 @@
+<div id="newsletter" class="newsletter" display-newsletter>
+	<div class="newsletter-inner">
+	<div class="close" ng-click="closeSubsc()"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></div>
+	<h1>Sign up for Newsletter</h1>
+	<form name="sendNewsletter">
+			<input class="newsl" type="email" ng-model="customer.emailNewsletter" required placeholder="Your E-mail">
+			<input class="sendbtn-newsl" type="submit" name="" value="Submit" ng-disabled="sendNewsletter.email.$invalid || !customer.emailNewsletter.length" ng-click="sendEmailNews()">
+	</form>
+	</div>
+</div>
+
+<div class="slogan">
+		<div class="slogan-inner">
+		See
+		</div>
+		Best of landscapes
+		
+	</div>
+   
+	<div id="background" class="main-background">
+		
+	</div>
