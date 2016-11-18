@@ -36,7 +36,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: $mainText;
-  
+
 }
 .newsletter{
 	width: 100%;
@@ -45,8 +45,8 @@ body {
 	z-index: 1;
 	background-color: rgba(0,0,0,0.8);
 	display: none;
-	
-	
+
+
 }
 .newsletter-inner{
 	color: white;
@@ -78,7 +78,7 @@ body {
 	cursor: pointer;
 }
 h1{
-	
+
 	 font-family: boldSansation;
 }
 h4{
@@ -97,7 +97,7 @@ img.gallery{
 }
 #myImg {
   background: url('/images/loading.gif') 50% no-repeat;
-  
+
 }
 
 .main-background{
@@ -105,7 +105,7 @@ img.gallery{
 	width: 100%;
 	height: 700px;
 	background-position: center;
-	
+
 }
 .slogan {
 	position: absolute;
@@ -116,7 +116,7 @@ img.gallery{
 	width: 100%;
 	top: 30%;
 	z-index: 0;
-	
+
 }
 .slogan-inner {
 	 font-family: lightSansation;
@@ -131,6 +131,10 @@ img.gallery{
 .footer {
   padding-left: 15px;
   padding-right: 15px;
+  height: 100px;
+  background-color: $dark;
+  position: relative;
+  clear: both;
 }
 
 /* Custom page header */
@@ -144,15 +148,15 @@ img.gallery{
   color: $mainText;
    font-family: boldSansation;
   font-size: 20px;
-  
+
 	ul {
-		
+
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
 		-webkit-margin-before: 0em;
 		-webkit-margin-after: 0em;
-		 
+
 			img{
 				margin-top: $menuPadding;
 				border-bottom: solid 1px white;
@@ -162,12 +166,12 @@ img.gallery{
 				padding: $menuPadding;
 				margin: 0;
 				border-bottom: solid 1px white;
-				
+
 				a, a:visited {
 					color: $mainText;
 					text-decoration: none;
 					text-shadow: 1px 1px 4px $shadow;
-					
+
 				}
 				a:hover {
 					color: $redText;
@@ -192,15 +196,15 @@ img.gallery{
   color: $mainText;
    font-family: boldSansation;
   font-size: 20px;
-  
+
 	ul {
-		
+
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
 		-webkit-margin-before: 0em;
 		-webkit-margin-after: 0em;
-		 
+
 			img{
 				margin-top: $menuPadding;
 				border-bottom: solid 1px white;
@@ -210,12 +214,12 @@ img.gallery{
 				padding: $menuPadding;
 				margin: 0;
 				border-bottom: solid 1px white;
-				
+
 				a, a:visited {
 					color: $mainText;
 					text-decoration: none;
 					text-shadow: 1px 1px 4px $shadow;
-					
+
 				}
 				a:hover {
 					color: $redText;
@@ -235,19 +239,16 @@ img.gallery{
 	text-align: center;
 	padding: 15px 15px 15px 15px;
 	margin-bottom: 15px;
+  position: relative;
 }
 .info-container-inner{
 	padding: 15px;
-	
+
 }
 
 
 /* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  
-}
+
 
 
 
@@ -305,23 +306,23 @@ input, textarea{
 	font-family: boldSansation;
 	padding: 5px;
 	margin-top: 5px;
-	border: solid 1px $redText;
+	border: solid 3px $redText;
 }
 input:focus, textarea:focus{
 	box-shadow: 0px 0px 25px $redText;
-	border: solid 1px $redText;
+	border: solid 3px $redText;
 }
 .sendbtn{
 	width: 150px;
 	height: 50px;
 	background-color: $redText;
-	color: $mainText; 
+	color: $mainText;
 	border: none;
-	
+
 }
 .sendbtn:hover{
 		background: #2a4e4c;
-   		 
+
 	}
 
 input[type="submit"]:disabled {
@@ -344,18 +345,21 @@ input.newsl{
 	-moz-box-sizing: border-box;
 	background-color: $redText;
 }
+.blog-container-inner{
+  padding: 15px;
+}
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
-	
+
 	.main-background{
 	background-image: url('/images/mainbackground.jpg');
 	width: 100%;
 	height: 1080px;
 	background-position: center;
-	
+
 	}
 	.slogan{
 	position: absolute;
@@ -365,7 +369,7 @@ input.newsl{
 	text-align: center;
 	width: 100%;
 	top: 50%;
-	
+
 	}
 	.menu-back{
 	width: 100%;
@@ -374,7 +378,7 @@ input.newsl{
 	}
   .container {
     max-width: 100%;
-    
+
 
   }
   .info-container{
@@ -393,7 +397,7 @@ input.newsl{
     padding-right: 0;
   }
   /* Space out the masthead */
-	.header-main {  
+	.header-main {
 		background-color: none;
 		vertical-align: middle;
 		margin-bottom: 10px;
@@ -405,14 +409,14 @@ input.newsl{
 		color: $mainText;
 
 	ul {
-		
+
 		list-style-type: none;
 		img{
 				//margin-top: $menuPadding;
 				border-bottom: none 1px white;
 			//vertical-align: middle;
 			}
-		
+
 			li {
 				display: inline;
 				padding: $menuPadding;
@@ -422,7 +426,7 @@ input.newsl{
 					color: $mainText;
 					text-decoration: none;
 					text-shadow: 1px 1px 4px $shadow;
-					
+
 				}
 				a:hover {
 					color: $redText;
@@ -437,7 +441,7 @@ input.newsl{
     padding-bottom: 19px;
   }
 }
-  .header {  
+  .header {
   background-color: $dark;
 	  vertical-align: middle;
   margin-bottom: 10px;
@@ -447,16 +451,16 @@ input.newsl{
   margin: auto;
   text-align: center;
   color: $mainText;
-  
+
 	ul {
-		
+
 		list-style-type: none;
 		img{
 				//margin-top: $menuPadding;
 				border-bottom: none 1px white;
 			//vertical-align: middle;
 			}
-		
+
 			li {
 				display: inline;
 				padding: $menuPadding;
@@ -466,7 +470,7 @@ input.newsl{
 					color: $mainText;
 					text-decoration: none;
 					text-shadow: 1px 1px 4px $shadow;
-					
+
 				}
 				a:hover {
 					color: $redText;
@@ -490,5 +494,9 @@ input.newsl{
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+  .blog-container{
+    width: 768px;
+    margin: auto;
   }
 }

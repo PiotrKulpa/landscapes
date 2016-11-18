@@ -8,10 +8,11 @@
  * Controller of the landscapesApp
  */
 angular.module('landscapesApp')
-  .controller('BlogCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BlogCtrl', function ($scope, $http) {
+    $http.get('/scripts/data.json').then(function(response){
+      $scope.news = response.data.records;
+    }, function(response){
+      $scope.err = 'Sorry, cant load data';
+    });
+
   });
