@@ -85,6 +85,10 @@ h4{
 	color: $redText;
 	font-style: italic;
 }
+h6{
+  text-align: right;
+  cursor: pointer;
+}
 .menu-back{
 	width: 100%;
 	height: 250px;
@@ -131,7 +135,6 @@ img.gallery{
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-  height: 100px;
   background-color: $dark;
   position: relative;
   clear: both;
@@ -347,6 +350,26 @@ input.newsl{
 }
 .blog-container-inner{
   padding: 15px;
+}
+.pagination {
+  margin: 0 auto;
+  //width: 768px;
+  text-align: center;
+  display: block;
+}
+.pagination-inner{
+
+  display: inline-block;
+  //float:left;
+  margin: 3px;
+}
+.pagination-btn{
+  border: solid 1px;
+  border-radius: 5px;
+  width: 15px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
 }
 
 

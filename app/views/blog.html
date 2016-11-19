@@ -1,11 +1,16 @@
 <div class="menu-back"></div>
 <div class="blog-container">
-  <div class="blog-container-inner" ng-repeat="x in news | limitTo:10">
+  <div class="blog-container-inner" ng-repeat="x in news | limitTo: 10: n">
     <h1>{{x.Title}}</h1>
     <h2>{{x.Short}}</h2>
-    <h6  ng-click="show='true'">More...</h6>
+    <h6  ng-click="show='true'">More <i class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></h6>
     <div  ng-show="show">{{x.Main}}</div>
     <hr>
   </div>
+<div class="pagination">
+  <div class="pagination-inner" ng-repeat="y in paginationData">
+    <div  class="pagination-btn" ng-click="paginationRange(y)">{{y+1}}</div>
+  </div>
+</div>
 
 </div>
