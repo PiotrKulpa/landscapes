@@ -18,9 +18,9 @@ angular.module('landscapesApp')
        var i =0;
        for(i=0; i<paginationIndex; i++){
          $scope.paginationData.push(i);
-       };
+       }
     }, function(response){
-      $scope.err = 'Sorry, cant load data';
+      $scope.err = response.data;
     });
       $scope.n = 0;
       $scope.paginationRange = function(pageNumber) {
